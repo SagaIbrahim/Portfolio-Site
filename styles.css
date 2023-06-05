@@ -1,13 +1,6 @@
-@media screen and (max-width: 1200px){
-  .box{
-    width: 40%;
-  }
-}
 
-@media screen and (max-width: 600px){
-  .box{
-    width: 90%;
-  }
+:root{
+  --main-blue: #45567d;
 }
 
 html{
@@ -79,8 +72,9 @@ h1, h2 {
 #projects{
   background-color: #3d5691;
   width: 100%;
-  height: 150%;
   overflow: hidden;
+  padding-bottom: 50px;
+  text-align: center;
 }
 #projects h1 {
   padding: 50px;
@@ -98,10 +92,13 @@ h1, h2 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 80%;
   height: auto;
   flex-flow: wrap;
   padding: 20px;
+  margin: auto;
+
+  
 }
 .box{
   display: flex;
@@ -110,13 +107,48 @@ h1, h2 {
   flex-direction: column;
   align-items: center;
   text-align:center;
-  margin: 10px;
+  margin: 20px;
   border: 1px solid #000;
-  border-radius: 3px;
+  border-radius: 5px;
   background-color: gray;
   overflow: auto;
 }
 .box .project-image{
   width: 100%;
   height: 90%;
+}
+.show-all{
+  font-size: 1rem;
+  background: gray;
+  transition: background 0.3s ease-out;
+}
+.btn{
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 2px;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+#socials{
+  background: #2d313d;
+  color: white;
+  text-align: center;
+  margin: auto;
+}
+.lets-work-together{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 300px;
+}
+.lets-work-together > h1{
+  font-size: 3.5vw;
+  margin-bottom: 10px;
+}
+.lets-work-together > p{
+  font-style: italic;
+  font-weight: light;
 }
